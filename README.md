@@ -1,2 +1,3 @@
 # namaste-react-
-This is git repo for React application by Namaste React.
+This is git repo for React.js application by Namaste React.
+Author-Nagesh

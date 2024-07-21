@@ -1,10 +1,15 @@
+import { LOGO_URL } from "../utils/constants";
+import {useState} from "react";
+
+
 const Header= () => {
+    const [buttonName,setButtonName]=useState("Login");
     return (
 <div className="header">
     <div className="logo-container">
         <img 
         className="logo"
-        src="https://png.pngtree.com/png-vector/20221231/ourmid/pngtree-food-delivery-logo-template-design-sign-menu-vector-png-image_43664212.jpg"
+        src={LOGO_URL}
         />
     </div>
     <div className="nav-items">
@@ -13,6 +18,11 @@ const Header= () => {
             <li>About Us</li>
             <li>Contact Us</li>
             <li>Cart</li>
+            <button className="login" onClick={()=>{
+                buttonName==="Login"? setButtonName("Logout"):setButtonName("Login");
+            }}
+ 
+            >{buttonName}</button>
         </ul>
 
     </div>

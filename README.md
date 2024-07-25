@@ -14,3 +14,4 @@ Whenever facing this error->
 # Imp Points to remember:
 //Component Composition->Calling one component inside another component.
 <! -- Comments: To access js, we have to use type="module" and JS file path -->
+-->Whenever state variable (useState) updates, react triggers a reconciliation cycle(means it re-renders the component)
